@@ -1,12 +1,14 @@
-﻿#pragma once
+﻿module;
 #include <QMainWindow>
+#include "page_second/wobjectdefs.h"
 namespace Ui
 {
 	class MainWindow;
 };
-class  MainWindow : public QMainWindow
+export module main_window;
+export class  MainWindow : public QMainWindow
 {
-	Q_OBJECT
+	W_OBJECT(MainWindow)
 public:
 	MainWindow(QWidget* parent = nullptr);
 	~MainWindow();

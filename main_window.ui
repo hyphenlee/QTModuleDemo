@@ -16,11 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>main window</string>
-      </property>
-     </widget>
+     <widget class="QTabWidget" name="tabWidget"/>
     </item>
    </layout>
   </widget>
@@ -30,7 +26,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>

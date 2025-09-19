@@ -14,24 +14,23 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 add_executable(test)
 target_sources(test 
   PUBLIC FILE_SET CXX_MODULES FILES
-  module1.cppm  # both cppm/ixx worked
-  module2.ixx
+  main_window.ixx
+  page_first.ixx 
 )
 target_sources(test
   PRIVATE
-  module2.cpp
   main_window.cpp
   main_window.ui
   main.cpp 
-  OldClass.h
-  OldClass.cpp
-  main_window.h
+  page_first.h
+  page_first.cpp
+  page_first.ui
 )
 target_link_libraries(test
   Qt6::Core
   Qt6::Gui
   Qt6::Widgets
-  module3
+  page_second
 )
 
-subdirs(module3)
+subdirs(page_second)
